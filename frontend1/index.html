@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Build with AI – Certificate Portal | GDG Belgaum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- MAIN PAGE -->
+  <div id="page-main" class="page active">
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <img src="gdg-logo.png" alt="GDG" class="gdg-logo-img" />
+          <span class="brand-name">Google Developer Groups</span>
+        </div>
+        <div class="header-right">
+          <span class="brand-sub-right">GDG Belgaum</span>
+          <div class="header-badge">Build with AI · 2026</div>
+        </div>
+      </div>
+      <div class="color-bar">
+        <span class="cb-blue"></span>
+        <span class="cb-red"></span>
+        <span class="cb-yellow"></span>
+        <span class="cb-green"></span>
+      </div>
+    </header>
+
+    <main class="main-wrap">
+
+      <div class="page-heading">
+        <p class="page-eyebrow">CERTIFICATE OF PARTICIPATION</p>
+        <div class="gold-line"></div>
+        <h1 class="page-title">Build with AI</h1>
+        <p class="page-sub">Hands-On AI Workshop &nbsp;·&nbsp; GDG Belgaum &nbsp;·&nbsp; May 5, 2026</p>
+      </div>
+
+      <div class="portal-card">
+        <div class="portal-card-top">
+          <div class="card-icon">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <rect width="44" height="44" rx="10" fill="#E8F0FE"/>
+              <rect x="11" y="13" width="22" height="15" rx="2.5" stroke="#4285F4" stroke-width="1.8" fill="none"/>
+              <line x1="15" y1="18" x2="29" y2="18" stroke="#4285F4" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="15" y1="22" x2="24" y2="22" stroke="#4285F4" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="22" cy="33" r="4.5" fill="#4285F4"/>
+              <path d="M19.5 33l2 2 3.5-3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2 class="portal-title">Download Your Certificate</h2>
+          <p class="portal-desc">Enter your registered email address to receive your official <strong>Build with AI</strong> participation certificate.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="emailInput">Registered Email Address</label>
+          <div class="input-row">
+            <input type="email" id="emailInput" placeholder="e.g. aarav.sharma@gmail.com" autocomplete="off" />
+            <button id="getBtn" onclick="getCertificate()">
+              <span id="btnText">Get Certificate</span>
+              <span id="btnLoader" class="loader hidden"></span>
+            </button>
+          </div>
+          <p id="errorMsg" class="error-msg hidden"></p>
+        </div>
+
+        <div class="portal-card-footer">
+          <span class="footer-check">&#10003;</span>
+          <span>Official certificate · Organized by <strong>Sarvesh Kakkeri</strong>, GDG Belgaum</span>
+        </div>
+      </div>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="4" width="16" height="15" rx="2" stroke="#4285F4" stroke-width="1.6" fill="none"/><line x1="3" y1="9" x2="19" y2="9" stroke="#4285F4" stroke-width="1.6"/><line x1="8" y1="2" x2="8" y2="6" stroke="#4285F4" stroke-width="1.6" stroke-linecap="round"/><line x1="14" y1="2" x2="14" y2="6" stroke="#4285F4" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <div class="info-card-text">
+            <strong>May 5, 2026</strong>
+            <span>10:00 AM – 2:30 PM IST</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2C8.24 2 6 4.24 6 7c0 4.5 5 13 5 13s5-8.5 5-13c0-2.76-2.24-5-5-5z" stroke="#EA4335" stroke-width="1.6" fill="none"/><circle cx="11" cy="7" r="2" stroke="#EA4335" stroke-width="1.6" fill="none"/></svg>
+          <div class="info-card-text">
+            <strong>PeopleTree College</strong>
+            <span>Belagavi, Karnataka</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#34A853" stroke-width="1.6" fill="none"/><path d="M7.5 11l3 3 5-5" stroke="#34A853" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="info-card-text">
+            <strong>Certified Workshop</strong>
+            <span>Google Developer Groups</span>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© 2026 Google Developer Groups · GDG Belgaum</span>
+        <div class="footer-links">
+          <a href="https://developers.google.com/community/gdg" target="_blank">About GDG</a>
+          <a href="https://gdg.community.dev/gdg-belgaum/" target="_blank">GDG Belgaum</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- NOT FOUND PAGE -->
+  <div id="page-notfound" class="page">
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <img src="gdg-logo.png" alt="GDG" class="gdg-logo-img" />
+          <span class="brand-name">Google Developer Groups</span>
+        </div>
+        <div class="header-right">
+          <span class="brand-sub-right">GDG Belgaum</span>
+          <div class="header-badge">Build with AI · 2026</div>
+        </div>
+      </div>
+      <div class="color-bar">
+        <span class="cb-blue"></span>
+        <span class="cb-red"></span>
+        <span class="cb-yellow"></span>
+        <span class="cb-green"></span>
+      </div>
+    </header>
+
+    <main class="main-wrap notfound-wrap">
+      <div class="notfound-card">
+        <div class="nf-dots">
+          <span class="nfd b"></span><span class="nfd r"></span>
+          <span class="nfd y"></span><span class="nfd g"></span>
+        </div>
+        <h1 class="oops">OOPS!</h1>
+        <div class="nf-line"></div>
+        <h2 class="nf-title">THE EMAIL ID MENTIONED DOES NOT EXIST!</h2>
+        <p class="nf-desc">Kindly check the email address inserted again. Make sure there are no typos or extra spaces.</p>
+        <p class="nf-contact">If you are still not able to download your certificate,<br/>kindly write to <strong>support@cleancode.club</strong> or contact your center.</p>
+        <button class="try-btn" onclick="tryAgain()">&#8635;&nbsp; Try Again</button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© 2026 Google Developer Groups · GDG Belgaum</span>
+        <div class="footer-links">
+          <a href="https://developers.google.com/community/gdg" target="_blank">About GDG</a>
+          <a href="https://gdg.community.dev/gdg-belgaum/" target="_blank">GDG Belgaum</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
