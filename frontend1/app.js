@@ -1,4 +1,6 @@
-const API_BASE = "https://certificatebackend-oarn.onrender.com/api";
+const API_BASE = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname.startsWith("172.")
+  ? "http://localhost:3001/api"
+  : "https://certificatebackend-oarn.onrender.com/api";
 
 function showPage(id) {
   document.querySelectorAll(".page").forEach((p) => p.classList.remove("active"));
